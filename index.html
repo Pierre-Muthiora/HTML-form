@@ -5,27 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div>
-        <h1>This is a div!</h1>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ul>
-        <h1>Controls</h1>
-        <p>Ctrl+Z to undo - Important</p>
-        <p>shift+ctrl+p to search for anything</p>
-        <p>double click files to open them side by side</p>
-        <p>View>split editor to work on files side by side</p>
-        <h1>Others</h1>
-        <p><strong>Success!</strong> Represents a positive action. <br>
-        <strong>Info!</strong> Represents a neutral informative change. </p>
-    </div>
-   
-   
+    <header>
+      <h1>HTML Form</h1>
+    </header>
+    
+    <section class="container">
+      <form id="my-form">
+
+        <div class="msg"></div>
+        <div>
+        
+        <label for="name" >Name</label>
+        <input type="text" id="name">
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="you@gmail.com">
+      </div>
+            
+      <input class="btn" type="submit" value="Submit">
+      </form>
+          
+      <ul id="users"></ul>
+    </section>
+      
+   <script src="index.js"></script>
 </body>
 </html>
